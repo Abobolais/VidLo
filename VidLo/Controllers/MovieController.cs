@@ -16,7 +16,7 @@ namespace VidLo.Controllers
             return View(movies);
         }
 
-        private object GetMovies()
+        private IEnumerable<Movie> GetMovies()
         {
             return new List<Movie>
             {
